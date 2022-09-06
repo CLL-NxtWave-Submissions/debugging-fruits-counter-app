@@ -3,7 +3,10 @@ import {Component} from 'react'
 import './index.css'
 
 class FruitsCounter extends Component {
-  state = {}
+  state = {
+    mangoesCount: 4,
+    bananasCount: 5,
+  }
 
   onClickEatBanana() {
     this.setState(prevState => ({bananasCount: prevState.bananasCount + 1}))
